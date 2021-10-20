@@ -15,9 +15,9 @@ The DownloadWorker has the download service to reach the endpoint end request to
 
 There are two implementation:
 
-- DownloadService: it's a custom implementation with the possibility to specify the number of parallel downloads. A feature good to be implemented could be the resume functionality.
+- *DownloadService*: it's a custom implementation with the possibility to specify the number of parallel downloads. A feature good to be implemented could be the resume functionality.
 
-- AZCopyDownloadService: it's a wrapper around zacopy utility. The resume is a native feature. It works only for Azure Storage Service.
+- *AZCopyDownloadService*: it's a wrapper around azcopy utility. The resume is a native feature. It works only for Azure Storage Service.
 
 *Note*: for the *azcopy* implementation, it's necessary to download the utility (<https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10>), put it in the DownloadWorker root folder and set to copy in the output.
 
